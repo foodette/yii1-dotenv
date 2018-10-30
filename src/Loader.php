@@ -28,14 +28,11 @@ class Loader
                  * Please register @vendor alias in bootstrap file or before
                  * call env function.
                  */
-                if (Yii::getPathOfAlias('@vendor')) {
-                    $vendorDir = Yii::getPathOfAlias('@vendor');
+                if (Yii::getPathOfAlias('vendor')) {
+                    $vendorDir = Yii::getPathOfAlias('vendor');
                     $path      = dirname($vendorDir);
-                } elseif (Yii::getPathOfAlias('@app')) {
-                    $path = Yii::getPathOfAlias('@app');
-                } else {
-                    $yiiDir = Yii::getPathOfAlias('@yii');
-                    $path   = dirname(dirname(dirname($yiiDir)));
+                } elseif (Yii::getPathOfAlias('root')) {
+                    $path = Yii::getPathOfAlias('root');
                 }
             } else {
                 if (defined('VENDOR_PATH')) {
