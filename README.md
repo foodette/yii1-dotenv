@@ -1,5 +1,7 @@
 Yii 1.1 DotEnv
 ==============
+[![Latest Stable Version](https://poser.pugx.org/foodette/yii1-dotenv/v/stable)](https://packagist.org/packages/foodette/yii1-dotenv)
+[![License](https://poser.pugx.org/foodette/yii1-dotenv/license)](https://packagist.org/packages/foodette/yii1-dotenv)
 
 PHP DotEnv for Yii 1.1 Framework.
 
